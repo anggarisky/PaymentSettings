@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F8"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#4B4587"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="124dp"
+        android:text="Payment Settings"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="17.json"
+            app:lottie_loop="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security First"
+            android:textStyle="bold"
+            android:textColor="#4B4587"
+            android:lineSpacingExtra="5dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Automatically saved in our\nclouds and locked"
+            android:textColor="#4B4587"
+            android:lineSpacingExtra="5dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="70dp"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:textStyle="bold"
+            android:layout_width="256dp"
+            android:layout_height="45dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="GET STARTED"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:background="@drawable/btn_primary"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:textColor="#D5D5D5"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
